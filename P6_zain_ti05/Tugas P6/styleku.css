@@ -1,0 +1,123 @@
+body{
+    background-color: wheat;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#header {
+    background-color:darksalmon;
+    color: blue;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 8px;
+    padding-top: 5px;
+}
+
+#header blockquote {
+    background-color:yellow;
+    border-top: 2px black dotted;
+    border-left: 2px black dotted;
+    border-right: 2px white solid;
+    border-bottom: 2px white solid;
+    color: black;
+}
+
+#header h1{
+    text-shadow: 2px 2px 2px white;
+}
+.menu ul {
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    list-style-type: none;
+    padding: 25px;
+}
+
+.menu li a {
+    color: blueviolet;
+    text-decoration: none;
+}
+
+.menu li a:hover{
+    background-color: darksalmon;
+    color: white;
+    padding: 25%;
+}
+.gambar {
+    display: flex;
+    width: auto;
+    height: auto;
+    justify-content: center;
+}
+
+p {
+    text-align: justify;
+}
+
+.koleksi{
+    background-color: darksalmon;
+    padding-left: 18px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border: 5px solid lightblue;
+}
+
+.koleksi img{
+    width: 22%;
+    padding: 15px;
+    text-align: center;
+}
+
+#geblek img{
+    margin-top: 3%;
+}
+
+.promo{
+    border: 5px outset;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: white;
+}
+
+.promo h2{
+    color: red;
+    text-align: center;
+}
+
+.promo h3{
+    color: red;
+    margin-left: 22%;
+}
+
+.promo h4{
+    counter-reset: red;
+    text-align: center;
+    padding-top: 2%;    
+}
+
+.promo ol{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.promo li{
+    padding: 3%;
+    
+}
+
+.promo li a{
+    color: blueviolet;
+    text-decoration: none;
+}
+.promo li a:hover{
+    color: blue;
+    padding: 5%;
+}
+.big {
+    color: blue; 
+
+    font-size: 2cm;        
+    line-height: 55px;
+}
