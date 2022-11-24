@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display:flex;
+    flex-direction: row;
+    min-height: 100vh;
+}
+.container{
+    display:flex;
+    flex-direction: column;
+    flex:1;
+}
+.main{
+    display:flex;
+    flex-direction: row;
+    min-height: 74.7vh;
+}   
+body > nav{
+    background-color:pink;
+    flex:0.2;
+}   
+.main > article{
+    flex:3;
+}   
+.main > aside{
+    background-color:#03dac5;
+    flex:1;
+}
+.container > header,footer{
+    background-color:khaki;
+    flex: 1;
+}
+header,footer,nav,aside,article{
+    padding:1em;
+}
