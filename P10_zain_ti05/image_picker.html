@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker</title>
+</head>
+<body>
+    <select name="dropdown_img" id="dropdown_img" onchange="gambar()">
+        <option hidden>---Pilih Gambar---</option>
+        <option value="gorila">Gorila</option>
+        <option value="singa">Singa</option>
+        <option value="elang">Elang</option>
+    </select>
+    <br>
+    <img alt="gambar" id="image">
+    <script>
+        function gambar() {
+            let drop_img = document.getElementById("dropdown_img").value;
+            let image = document.getElementById("image").value;
+
+            if (drop_img == "gorila") {
+                image.setAttribute(
+                "src",
+                "https://images.unsplash.com/photo-1557218825-334e575bcc38?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                );
+                alert("Ini Gambar Gorila")
+
+            }else if(drop_img == "singa") {
+                image.setAttribute(
+                "src",
+                "https://images.unsplash.com/photo-1614027164847-1b28cfe1df60?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=786&q=80"
+                );
+                alert("Ini Gambar Singa")
+
+            }else if(drop_img == "elang") {
+                image.setAttribute(
+                "src",
+                "https://images.unsplash.com/photo-1584313452005-8ae4be92b63f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                );
+                alert("Ini Gambar elang")
+                
+            }else{
+                alert("Tidak Ada Gambar")
+            }
+        }
+    </script>
+</body>
+</html>
