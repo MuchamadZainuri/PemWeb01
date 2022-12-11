@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatBox</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #D9FDD3;
+        }
+        .container{
+            height: auto;   
+            box-sizing:border-box;
+        }
+        .chat{
+            height: 91.3vh;
+            padding-left: 10px;
+            padding-top: 10px;
+        }
+        .message{
+            position: fixed;
+            display: flex;
+            width:99.1%;
+            background-color: rgb(34, 255, 0);
+            justify-content: space-between;
+            padding: 5px;
+        }
+        .inp{
+            width: 87%;
+            height: 5vh;
+            font-size: 17px;
+        }
+        .message > button{
+            width: 12%;
+            height: 5.5vh;
+            font-size: 17px;
+        }
+        .what{
+            background-color:whitesmoke;
+            margin-bottom: 5px;
+            padding: 5px;
+            border-radius: 5px;
+            width: 9vw;
+            font-size: small;
+        }
+        .dekor2{
+            background-color:rgba(245, 245, 245, 0.781);
+            margin-bottom: 5px;
+            padding: 5px;
+            border-radius: 5px;
+            width: 9vw;
+            font-size:small;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="chat" id="msg_user">
+            <p class="what"><span style="font-size: medium; color:tomato ;">Sigit Rendang</span><br>Hello!! </p>
+            <p class="dekor2"><span style=" font-size: medium; color:tomato ;">Sigit Rendang</span><br> Apa Kabar ?</p>
+        </div>
+        <div class="message">
+            <input type="text" class="inp" id="inp_chat" placeholder="  Type a message.." onfocus="this.value=''" />
+            <button onclick="chat()">Kirim</button>
+        </div>
+    </div>
+    
+    <script>
+        function chat() {
+            let elemen, teks, parent, spasi;
+            let inp_chat = document.getElementById("inp_chat").value;
+            elemen = document.createElement("span");
+            spasi = document.createElement("br");
+            teks = document.createTextNode(inp_chat);
+
+            elemen.appendChild(teks);
+
+            parent = document.getElementById("msg_user");
+            parent.appendChild(spasi)
+            parent.appendChild(elemen).style="background-color: rgba(245, 245, 245, 0.781); padding:5px; border-radius:5px;";
+        }
+    </script>
+</body>
+
+</html>
