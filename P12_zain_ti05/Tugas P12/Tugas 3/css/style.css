@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.satu{
+    width: 80%;
+    height: 30vh;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+#content > div.df1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+nav{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.dua{
+    width: 260px;
+    height: 220px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+#header{
+    background-image: url(https://images.unsplash.com/photo-1488330890490-c291ecf62571?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    background-color:steelblue;
+    background-size: cover;
+}
+#asaide{
+    background-color: tomato;
+    color: whitesmoke;
+    padding: 17px;
+}
+
+#content{
+    background-color:khaki;
+    padding: 25px;
+}
+#footer{
+    padding-top: 15px;
+    background-color:cornflowerblue;
+    color: whitesmoke;
+}
+
+#abar1{
+    background-color: #fff;
+}
+#abar1 > a{
+    color: black;
+}
+
+#list1 > li{
+    margin-right: 35px;
+}
+#list1 > li > a{
+    color: black;
+}
+#list > li > a{
+    color: black;
+} 
+
+#search > input,button{
+    margin-right: 15px;
+}
+#header > nav#abar1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.text-center > img.gajah{
+    width: 80%;
+    height: auto;
+
+} 
+
+@media only screen and (min-width:940px) {
+    .navbar-toggler {
+        display: none;
+    }
+
+    .navbar-collapse {
+        display: flex;
+        position: absolute;
+        right: 0;
+
+    }
+
+    .navbar-collapse ul {
+        display: flex;
+        flex-direction: row;
+    }
+@media only screen and (min-width: 600px) {
+    #content > div.df1 {
+        display: flex;
+        flex-direction: row;
+}
+    .satu {
+        width: 20vw;
+        height: 30vh;
+        border-radius: 10px;
+    }
+}
+}
