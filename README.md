@@ -1,4 +1,4 @@
-# Tugas Tugas PemWeb-1
+# Kumpulan Hasil Praktikum dan Tugas PemWeb-1
 Nama : Muchamad Zainuri <br>
 NIM : 0110222091 <br>
 Rombel : TI05 <br>
